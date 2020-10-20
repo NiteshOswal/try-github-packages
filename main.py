@@ -2,4 +2,4 @@ from app import hello_world
 
 
 if __name__ == '__main__':
-    print(hello_world('Taco'))
+    print(hello_world('Workflow'))
