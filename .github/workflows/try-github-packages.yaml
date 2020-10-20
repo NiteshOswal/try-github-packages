@@ -24,10 +24,9 @@ jobs:
         run: |
           pytest
       - name: Push to GitHub Packages
-        uses: docker/build-push-action@v1
+        uses: docker/build-push-action@v2
         with:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
           registry: docker.pkg.github.com
-          repository: NiteshOswal/try-github-packages/main
-          tag_with_ref: true
+          repository: niteshoswal/try-github-packages/main
